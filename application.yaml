@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/dalthonmh/flags
+    repoURL: https://github.com/dalthonmh/flags-argocd.git
     targetRevision: HEAD
     path: blue
   destination:
