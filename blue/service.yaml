@@ -7,9 +7,9 @@ spec:
   selector:
     app: my-app
     version: blue
+  type: NodePort
   ports:
     - protocol: TCP
       port: 5000
       targetPort: 5000
       nodePort: 30080
-      type: NodePort
