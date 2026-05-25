@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: flags
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/dalthonmh/flags
+    targetRevision: HEAD
+    path: blue
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: flags
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

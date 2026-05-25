@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-blue
+  namespace: flags
+data:
+  show_button: "FALSE"
