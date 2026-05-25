@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: dalthonmh/flags:0.0.2
+          image: dalthonmh/flags:0.0.3
           ports:
             - containerPort: 5000
           envFrom:
