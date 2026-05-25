@@ -4,4 +4,4 @@ metadata:
   name: configmap-blue
   namespace: flags
 data:
-  show_button: "TRUE"
+  SHOW_BUTTON: "TRUE"
